@@ -4,8 +4,10 @@ Heads up Limit Hold'em Poker Solver using CFR Algorithm
 
 ## How to run the code
 ``` Python main.py```
+
 Edit the _constant.py_ to change the parameteres
 
+## Evaluation
 Strategies Calculated in 10000 Iterations:
 ```
 Player 1 strategies: 
