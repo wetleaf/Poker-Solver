@@ -1,11 +1,13 @@
 # Poker-Solver
-This is an implementation of [Counterfactual Regret Minimization (CFR)](https://martin.zinkevich.org/publications/regretpoker.pdf) for a simplified version of Texas Hold'em poker. CFR is an algorithm that is commonly used to solve imperfect information games. It is guaranteed to converge to a Nash equilibrium in finite two-player zero-sum games, such as many two-player poker variants. A Nash equilibrium is a set of strategies in which neither player can improve their expected payoff by changing their own strategy, as long as the other player doesn't change theirs. An interesting consequence of this is that the poker agent can learn to bluff and react to the opponent's bluffs (although it is of course impossible to predict with certainty whether an opponent is bluffing).
+This is an implementation of [Counterfactual Regret Minimization (CFR)](https://martin.zinkevich.org/publications/regretpoker.pdf) for a simplified version of Texas Hold'em poker ([Kuhn Poker](https://en.wikipedia.org/wiki/Kuhn_poker)). CFR is an algorithm that is commonly used to solve imperfect information games. It is guaranteed to converge to a Nash equilibrium in finite two-player zero-sum games, such as many two-player poker variants. A Nash equilibrium is a set of strategies in which neither player can improve their expected payoff by changing their own strategy, as long as the other player doesn't change theirs. An interesting consequence of this is that the poker agent can learn to bluff and react to the opponent's bluffs (although it is of course impossible to predict with certainty whether an opponent is bluffing).
 Heads up Limit Hold'em Poker Solver using CFR Algorithm
 
 ## How to run the code
-``` Python main.py```
+>$ Python main.py
 
-Edit the _constant.py_ to change the parameteres
+Edit the _constant.py_ to change the game parameteres.
+
+## Rules
 
 ## Evaluation
 Strategies Calculated in 10000 Iterations:
