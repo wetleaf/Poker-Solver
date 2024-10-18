@@ -3,11 +3,36 @@ This is an implementation of [Counterfactual Regret Minimization (CFR)](https://
 Heads up Limit Hold'em Poker Solver using CFR Algorithm
 
 ## How to run the code
->$ Python main.py
+``` 
+$ Python main.py
+```
 
 Edit the _constant.py_ to change the game parameteres.
 
 ## Rules
+
+1. Three cards (King(K), Queen(Q) and Jack(J)) are dealt among two players (Valuation: K > Q > J)
+2. Each player antes 1 chip to begin the game (an ante is a forced bet at the start of every hand)
+3. Each player can check, bet 1 chip, call and fold.
+4. If **player 1 valuation** > **player 2 valuation**,
+    1. If both player check, player 1 **wins 1** chip
+    2. If player 1 check and player 2 bet,
+        1. Player 1 **loses 1** chip if player 1 folds
+        2. Player 1 **wins 2** chip if player 1 calls
+    3. If player 1 bets,
+        1. Player 1 **wins 1** if player 2 folds.
+        2. Player 1 **wins 2** if player 2 calls
+5. If **player 2 valuation** > **player 1 valuation**,
+    1. If both player check, player 1 **loses 1** chip
+    2. If player 1 check and player 2 bet,
+        1. Player 1 **loses 1** chip if player 1 folds
+        2. Player 1 **loses 2** chip if player 1 calls
+    3. If player 1 bets,
+        1. Player 1 **wins 1** if player 2 folds.
+        2. Player 1 **loses 2** if player 2 calls
+
+<img src="KuhnPoker.png"  width="530" height="400" >
+<figcaption>Game Tree of heads-up limit hold’em Poker (Kuhn Poker)</figcaption>
 
 ## Evaluation
 Strategies Calculated in 10000 Iterations:
